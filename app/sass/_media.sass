@@ -1,0 +1,572 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1400px)
+  html
+    font-size: 8px
+  .btn-login_green
+    line-height: 2.5rem
+  .main-content .step_content .drop-content .discount,.main-content .step_content .drop-content .free
+    font-size: 13px
+  .dropdown>a:after
+    top: 1px
+  .main-content .step_content:after
+    border-width: 25px 0 25px 30px
+  .message p:before
+    width: 7.5rem
+    height: 7.5rem
+  .btn-exchange
+    font-size: 2.5rem
+    width: 300px
+  .main-content .step_content .option
+    font-size: 16px
+  .main-content .step_content .option.active
+    font-size: 16px
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+  .btn-exchange
+    width: 250px
+  .main-content .step_content:after
+    border-width: 25px 0 25px 30px
+  .main-content .step_header
+    padding: 0 2rem 0 2rem
+  .main-content .step_content ul
+    min-width: 100%
+  .top-line__nav nav>ul .dropdown ul
+    transform: translateX(calc(50% - 12.5px))
+
+  .exchange-money
+    min-height: 600px
+  .message
+    width: 300px
+    p
+      font-size: 15px
+  .partner .main-content>ul .drop-parent>a span
+    margin-right: 2rem
+  .partner .main-content>ul .drop-parent>a
+    padding: 1.5rem 2rem 1.5rem 2rem
+    font-size: 2.6rem
+  .partner .main-content>ul .drop-parent .drop-content
+    margin-left: 11.5rem
+  .header-partner .title
+    font-size: 5rem
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+  .btn-exchange
+    width: 300px
+  .message
+    width: 360px
+    p
+      font-size: 18px
+  .top-line__logo
+    width: 140px
+
+  .top-line
+    padding: 0 2rem
+    justify-content: space-between
+  .top-line__nav nav
+    margin-right: 2rem
+  .login-language .login_form form
+    min-width: 35rem
+  .main-content
+    flex-direction: column
+  .main-content .step_header
+    min-height: 9rem
+    padding: 0 5rem 0 5rem
+  .feedback_right
+    display: none
+  .feedback
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    background: #666
+    .mobile_title
+      display: block
+    &_left
+      justify-content: center
+      flex: 0
+    &_right
+      justify-content: center
+      flex: 0
+    .title
+      display: none
+    .load_more
+      display: block
+    .item
+      height: inherit
+      margin: 0
+      margin-bottom: 10rem
+      padding-top: 6rem
+      padding-bottom: 3rem
+      &:last-child
+        margin-bottom: 10rem
+      &_content
+        color: #414141
+        font-size: 1.75rem
+        font-weight: 600
+        line-height: 2.25rem
+        .name
+          color: #d7b569
+          font-size: 1.75rem
+          line-height: 2.25rem
+
+      &_photo
+        top: 0
+        left: 50%
+
+  .main-content .step_content:after
+    display: none
+  .feedback .item
+    padding-left: 0rem
+    justify-content: center
+    height: 19rem
+    &:last-child
+      margin-bottom: 0
+  .feedback
+    .feedback_left
+      .item
+        &:last-child
+          //margin-bottom: 10rem
+  .feedback
+    .feedback_right
+      margin-top: 10rem
+      margin-bottom: 5rem
+  .main-content .step:nth-child(2) .step_header
+    background-color: #75c599
+  .main-content .step:nth-child(2) .step_header .title:after
+    background: url('../img/content-header-icon2-2.png') no-repeat center
+    background-size: contain
+    background-color: #75c599
+  .main-content .step:last-child .step_header .title
+    font-size: 20px
+  .main-content .step:last-child .step_header .title:after
+    width: 34px
+    height: 34px
+  .main-content .step_header .title:after
+    width: 10rem
+    height: 4.5rem
+
+  .main-content .step:nth-child(1) .step_header .title:after
+    background: url('../img/content-header-icon1.png') no-repeat center
+    background-size: contain
+
+  .main-content .step:last-child .step_header .title:after
+    background: url('../img/content-header-icon3-3.png') no-repeat center
+    background-size: contain
+  .main-content .step_content .option
+    font-size: 2rem
+  .main-content .step,.main-content .step:last-child
+    width: 100%
+  .partner .main-content>ul .drop-parent .drop-content li:before
+    top: 7px
+    transform: translate(0,0)
+  .header-partner .title
+    font-size: 4.2rem
+  .header-partner .title:before
+    margin-right: 3rem
+    width: 15rem
+    height: 15rem
+    background-size: 8rem
+  .header-partner
+    min-height: 500px
+  .partner .main-content>ul .drop-parent>a
+    font-size: 2.5rem
+  .partner .main-content>ul .drop-parent .drop-content li
+    font-size: 1.9rem
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+  .top-line
+    position: relative
+  .top-line__nav
+    display: none
+    flex-direction: column
+    position: absolute
+    width: 100%
+    background: #414141
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    padding: 2rem 4rem 5rem 4rem
+    justify-content: center
+    overflow: scroll
+    height: 600px
+    nav
+      margin-right: 0
+      width: 100%
+      >ul
+        flex-direction: column
+        text-align: center
+        >li
+          >a
+            border-bottom: 2px solid #3c3c3c
+            width: 100%
+            padding: 1.9rem 1rem
+            &:hover
+              background: none
+
+  .top-line__nav nav>ul>li.active a
+    background: none
+    border-bottom: 2px solid #3c3c3c
+  .top-line__nav nav>ul .dropdown ul
+    justify-content: center
+    display: block
+    flex-direction: column
+    text-align: center
+    width: 100%
+    position: relative
+    left: 0
+    transform: translateX(0)
+    box-shadow: none
+    padding: 0
+    &:after
+      display: none
+    >li
+      >a
+        border-bottom: 2px solid #3c3c3c
+        width: 100%
+        justify-content: center
+        font-size: 2.4rem
+        font-weight: 400
+        padding: 1.9rem 1rem
+        line-height: inherit
+        &:last-child
+          border-bottom: 2px solid #3c3c3c
+        &:after
+          display: none
+
+  .top-line__nav nav>ul .dropdown
+    >a
+      display: none
+  .login-language
+    margin-top: 4rem
+  .login-language .login_form form
+    min-width: 38rem
+  .close-menu
+    display: flex
+    top: -10px
+    right: 2rem
+    margin-top: 0
+  .top-line__logo
+    display: none
+  .top-line
+    min-height: 9rem
+    padding: 0 2rem
+  .btn-login_green
+    font-size: 2.5rem
+  .main-content .step_content .another-option .option.active
+    box-shadow: none
+  .footer
+    ul
+      &:first-child
+        display: none
+  .main-content .step_content .mobile_options.hidden-option
+    top: 129%
+  .exchange-money .container_left
+    margin-right: 0
+    text-align: center
+
+  .exchange-money .container
+    margin-top: 5rem
+  .exchange-money
+    min-height: inherit
+    padding-bottom: 6rem
+  .login-language .login_form
+    transform: translateX(-36%)
+  .main-content .step_content .desktop-options a:first-child
+    border-radius: 0
+  .login-language
+    .login_form
+      z-index: 9
+      width: auto
+      position: fixed
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+      label
+        font-size: 18px !important
+      input
+        font-size: 21px !important
+      &:after
+        display: none
+      form
+        width: 360px
+        height: 667px
+        border-radius: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        padding: 0 55px
+        .with-tip
+          margin-bottom: 0
+        .btn-fogot
+          margin: 30px 0
+          font-size: 16px
+          border-bottom: 1px solid black
+          text-decoration: none
+          line-height: 2.5rem
+        .btn-login_green
+          font-size: 17px
+          margin-bottom: 1rem
+        p
+          display: inline-block
+          margin-bottom: 0
+
+
+  .desktop-options
+    a.active
+      border-radius: 0 !important
+    a:last-child
+      &.active
+        border-radius: 6px
+  .main-content .step_content .hidden-option .option.active:last-child
+    border-radius: 0 0 6px 6px!important
+
+  .header-partner .title
+    font-size: 3.1rem
+    line-height: 5.5rem
+  .header-partner .title:before
+    height: 10rem
+    width: 10rem
+    background-size: 5rem
+  .partner .main-content>ul .drop-parent .drop-content li:before
+    top: 6px
+  .partner .main-content>ul .drop-parent>a
+    font-size: 2rem
+  .partner .main-content>ul .drop-parent .drop-content li
+    font-size: 1.8rem
+  .partner .main-content>ul .drop-parent .drop-content
+    margin-left: 9.5rem
+
+
+@media only screen and (max-width : 539px)
+  .exchange-money .rate_currency-cost .currency-cost .price .sell,.exchange-money .rate_currency-cost .currency-cost .price .buy
+    color: #cd2b2b
+    font-size: 22px
+    font-weight: 700
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price span
+    color: #666
+    font-size: 14px
+    font-weight: 400
+  .exchange-money .container_left .rate_currency-type a
+    font-size: 17px
+  .exchange-money .container_left .rate_currency-type a.active
+    font-size: 17px
+  .exchange-money .container_left .rate_currency-cost .currency-cost .buttons a
+    font-size: 17px
+  .main-content .step_header
+    min-height: 100px
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price .buy
+    line-height: 3rem
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price .sell
+    line-height: 3rem
+
+  .exchange-money .container_left .title
+    font-size: 30px
+  .exchange-money .container_left .title-info
+    font-size: 18px
+  .main-content .step_header .title
+    font-size: 24px
+  .main-content .step_content .option
+    font-size: 16px
+  .message
+    width: 270px
+    padding-left: 9rem
+    p
+      font-size: 14px
+      padding: 0
+      padding-right: 3rem
+      br
+        display: none
+      &:before
+        width: 45px
+        height: 45px
+        background-size: 3rem
+  .main-content .step_content .drop-content .form
+    width: 255px
+
+  .message_without-icon
+    padding: 0 2rem
+    p
+      padding-right: 0
+
+
+  .message_money-bag
+    p
+      a
+        line-height: 15px
+      &:before
+        background-size: 15px 18px
+
+  .btn-exchange
+    width: 255px
+  .btn_green-two
+    min-width: auto
+    a
+      font-size: 14px
+  .btn_green-two_left a
+    padding: 1.4rem 1rem 1.4rem 1rem
+  .btn_green-two_right a
+    padding: 1.4rem 1rem 1.4rem 2rem
+  .star-rating__ico:before
+    font-size: 35px !important
+  .star-rating__wrap
+    width: 200px
+  .message p
+    line-height: 2.2rem
+
+  .message_failed
+    p
+      &:before
+        background-size: 16px 16px
+  .main-content .step_content label
+    font-size: 18px!important
+  .main-content .step_content .input-bg-gray input
+    font-size: 21px
+
+
+  .header-partner
+    background: url("../img/partner-bg-mobile.png") no-repeat top center
+    background-size: cover
+    padding: 0 1.7rem
+    min-height: 465px
+    .title
+      font-size: 25px
+      line-height: 34px
+      flex-direction: column
+      align-items: flex-start
+      br
+        display: none
+      .mobile
+        display: inline-block
+  .header-partner .title:before
+    height: 70px
+    width: 70px
+    background-size: 32px
+    margin-bottom: 2.8rem
+  .partner .main-content>ul .drop-parent>a
+    font-size: 16px
+    font-weight: 700
+    line-height: 22px
+  .partner .main-content>ul .drop-parent.active>a span
+    height: 40px
+    min-width: 40px
+  .partner .main-content>ul .drop-parent .drop-content
+    margin-left: 5.8rem
+  .partner .main-content>ul .drop-parent .drop-content li
+    font-size: 16px
+  line-height: 25px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+  .main-content .step_header
+    padding: 0 2rem
+  .feedback .item
+    padding-left: 2rem
+    padding-right: 2rem
+    justify-content: flex-start
+  .exchange-money .container_left .rate_currency-cost .currency-cost
+    min-width: auto
+    width: 90%
+    margin: 0 auto
+  .exchange-money .container_left .rate_currency-cost .currency-cost .price
+    padding-top: 4rem
+    padding-bottom: 2.5rem
+  .exchange-money .container_left .title
+    font-size: 30px
+  .exchange-money .container_left .title-info
+    font-size: 18px
+  .main-content .step_header .title
+    font-size: 24px
+  .main-content .step_content .option
+    font-size: 16px
+  .main-content .step_header .title:before
+    height: 45px
+    width: 45px
+  .main-content .step_header
+    padding: 0 1rem
+  .main-content .step:last-child .step_header .title:after
+    //width: 34px
+    //height: 34px
+  .main-content .step:last-child .step_header .title:before
+    //margin-right: .5rem
+  .main-content .step:last-child .step_header .title
+    font-size: 20px
+  .main-content .step:last-child .step_header .title:after
+    width: 34px
+    height: 34px
+  .main-content .step_header .title:after
+    width: 10rem
+    height: 4.5rem
+  .main-content .step_header
+    padding: 0 2rem
+  .feedback .item
+    min-width: auto
+    width: 100%
+
+  .exchange-money .container_left .title-info
+    padding: 0 3rem
+    br
+      display: none
+  .login-language
+    .login_form
+      form
+        width: 320px
+        height: 567px
+        padding: 0 32px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+  .mobile
+    display: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+  .top-line__logo_mobile,.top-line__nav_mobile-btn
+    display: none
+  .login_form
+    .btn-close,.btn-login_new-account
+      display: none
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+  .message
+    padding-left: 104px
+    p
+      line-height: 22px
+  .message_without-icon
+    padding-left: 3rem
+
+
+@media only screen and (min-width : 1400px)
+    .message p
+      padding: 0
+
