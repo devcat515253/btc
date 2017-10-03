@@ -30,6 +30,11 @@
     "vinyl-ftp": "^0.6.0"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "highcharts": "^5.0.14"
   }
 }

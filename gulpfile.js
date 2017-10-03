@@ -16,13 +16,22 @@ var gulp           = require('gulp'),
 
 // Скрипты проекта
 var babel = require('gulp-babel');
+// var Highcharts = require('highcharts');
+//
+// // Load module after Highcharts is loaded
+// require('highcharts/modules/exporting')(Highcharts);
+
+
 
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
 		])
+
 	.pipe(concat('common.min.js'))
+
 	.pipe(babel())
+
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });

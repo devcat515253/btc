@@ -109,7 +109,7 @@ a
 						font-size: 2.4rem
 						font-weight: 400
 						//line-height: 22px
-						padding: 3.7rem 1rem
+						padding: 3.7rem 2rem
 						border-bottom: 3px solid transparent
 						transition: all .25s ease
 						&:hover
@@ -124,7 +124,7 @@ a
 						padding: 0 2rem
 						left: inherit
 						right: 0
-						transform: translateX(calc(50% - 12.5px))
+						transform: translateX(calc(50% - 24.5px))
 						li
 							a
 								padding: 2rem .5rem
@@ -144,6 +144,9 @@ a
 									width: 11px
 									height: 15px
 									margin-left: 10px
+							&.active
+								a
+									color: #f4cd78
 
 							&:last-child
 								a
@@ -329,6 +332,7 @@ a
 .exchange-money
 	min-height: 700px
 	display: flex
+	//align-items: center
 	position: relative
 	z-index: 2
 	background: url("../img/overlay.png") no-repeat top center
@@ -337,8 +341,9 @@ a
 		width: auto
 		position: relative
 		z-index: 2
-		margin-top: 7rem
-
+		margin-top: 10rem
+		display: flex
+		align-items: flex-start
 		&_left
 			margin-right: 2.5rem
 			.title
@@ -346,6 +351,7 @@ a
 				font-weight: 700
 				color: white
 				line-height: 5rem
+				margin-top: 0
 				span
 					color: #f4cd78
 				&-info
@@ -479,6 +485,16 @@ a
 						display: none
 						&.show
 							display: flex
+		&_right
+			display: flex
+			align-items: center
+
+			.graph
+				#container
+					background: white
+					border-radius: 10px
+					overflow: hidden
+
 
 
 
@@ -1323,6 +1339,9 @@ a
 				transition: all .25s ease
 				&:hover
 					color: #f4cd78
+			&.active
+				a
+					color: #f4cd78
 
 .top-line__nav_mobile-btn
 	a
@@ -1809,8 +1828,153 @@ a
 			padding-right: 27rem
 
 
+.main-content .step_content .hidden-option a:hover
+	background: darken(#393939 , 3%)
+
+.pagination
+	min-height: 11.7rem
+	display: flex
+	justify-content: center
+	align-items: center
+	.disable
+		a
+			background-color: #eaeaea
+			border-radius: 8px 0px 0px 8px
+			box-shadow: 0 3px 0 #cfcfcf
+			&:hover
+				background-color: #eaeaea
+				color: #fefefe!important
+				border: 3px solid transparent !important
+				cursor: default
+				&:before
+					background-color: #cfcfcf!important
+				&:after
+					border-color: transparent #cfcfcf transparent transparent!important
+			&:before
+				background-color: #cfcfcf !important
+			&:after
+				border-color: transparent #cfcfcf transparent transparent!important
+
+	ul
+		display: flex
+		li
+			&.active
+				a
+					background-color: #6bb28b
+					box-shadow: 0 3px 0 #5c9977
+					color: #fefefe
+					border: 3px solid transparent
+
+	a
+		width: 4.5rem
+		height: 4.5rem
+		border: 3px solid #eaeaea
+		border-radius: 8px
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #6bb28b
+		font-size: 1.8rem
+		font-weight: 700
+		line-height: 2.2rem
+		margin: 0 4px
+		&:hover
+			background-color: #6bb28b
+			color: #fefefe!important
+			border: 3px solid transparent !important
+			//transform: scale(1.1,1.1)
+			&:before
+				background-color: #fff!important
+			&:after
+				border-color: transparent #fff transparent transparent!important
 
 
 
+	.btn
+		display: flex
+		margin: 0 4px
+
+
+	.prev
+		&-all
+			a
+				border: 3px solid #eaeaea
+				border-radius: 8px 0px 0px 8px
+				position: relative
+				display: flex
+				justify-content: center
+				align-items: center
+				&:after
+					position: relative
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 6px 8px 6px 0
+					border-color: transparent #6bb28b transparent transparent
+				&:before
+					position: relative
+					content: ''
+					width: 3px
+					height: 12px
+					background-color: #6bb28b
+
+		&-item
+			a
+				border: 3px solid #eaeaea
+				border-radius: 8px
+				display: flex
+				justify-content: center
+				align-items: center
+				&:after
+					position: relative
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 6px 8px 6px 0
+					border-color: transparent #6bb28b transparent transparent
+	.next
+		&-all
+			a
+				border: 3px solid #eaeaea
+				border-radius: 0px 8px 8px 0px
+				position: relative
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: row-reverse
+				&:after
+					position: relative
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 6px 8px 6px 0
+					border-color: transparent #6bb28b transparent transparent
+					transform: rotate(180deg)
+				&:before
+					position: relative
+					content: ''
+					width: 3px
+					height: 12px
+					background-color: #6bb28b
+
+		&-item
+			a
+				border: 3px solid #eaeaea
+				border-radius: 8px
+				display: flex
+				justify-content: center
+				align-items: center
+				&:after
+					position: relative
+					content: ''
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 6px 8px 6px 0
+					border-color: transparent #6bb28b transparent transparent
+					transform: rotate(180deg)
 
 @import "media" // Всегда в конце
