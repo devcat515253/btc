@@ -45,15 +45,17 @@
     width: 300px
     p
       font-size: 15px
-  .partner .main-content>ul .drop-parent>a span
+  .slide-tabs .main-content>ul .drop-parent>a span
     margin-right: 2rem
-  .partner .main-content>ul .drop-parent>a
+  .slide-tabs .main-content>ul .drop-parent>a
     padding: 1.5rem 2rem 1.5rem 2rem
     font-size: 2.6rem
-  .partner .main-content>ul .drop-parent .drop-content
+  .slide-tabs .main-content>ul .drop-parent .drop-content
     margin-left: 11.5rem
   .header-partner .title
     font-size: 5rem
+  .slide-tabs .main-content p
+    padding-right: 19rem
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -162,7 +164,7 @@
     font-size: 2rem
   .main-content .step,.main-content .step:last-child
     width: 100%
-  .partner .main-content>ul .drop-parent .drop-content li:before
+  .slide-tabs .main-content>ul .drop-parent .drop-content li:before
     top: 7px
     transform: translate(0,0)
   .header-partner .title
@@ -174,10 +176,16 @@
     background-size: 8rem
   .header-partner
     min-height: 500px
-  .partner .main-content>ul .drop-parent>a
+  .slide-tabs .main-content>ul .drop-parent>a
     font-size: 2.5rem
-  .partner .main-content>ul .drop-parent .drop-content li
+  .slide-tabs .main-content>ul .drop-parent .drop-content li
     font-size: 1.9rem
+
+
+  .faq .main-content>ul .drop-parent .drop-content
+    margin-left: 7rem
+    p
+      padding-right: 7rem
 
 
 /* Small Devices, Tablets */
@@ -187,7 +195,7 @@
   .top-line__nav
     display: none
     flex-direction: column
-    position: absolute
+    position: fixed
     width: 100%
     background: #414141
     top: 0
@@ -197,7 +205,7 @@
     padding: 2rem 4rem 5rem 4rem
     justify-content: center
     overflow: scroll
-    height: 600px
+
     nav
       margin-right: 0
       width: 100%
@@ -251,8 +259,8 @@
     min-width: 38rem
   .close-menu
     display: flex
-    top: -10px
-    right: 2rem
+    //top: -10px
+    //right: 2rem
     margin-top: 0
   .top-line__logo
     display: none
@@ -338,14 +346,19 @@
     height: 10rem
     width: 10rem
     background-size: 5rem
-  .partner .main-content>ul .drop-parent .drop-content li:before
+  .slide-tabs .main-content>ul .drop-parent .drop-content li:before
     top: 6px
-  .partner .main-content>ul .drop-parent>a
+  .slide-tabs .main-content>ul .drop-parent>a
     font-size: 2rem
-  .partner .main-content>ul .drop-parent .drop-content li
+  .slide-tabs .main-content>ul .drop-parent .drop-content li
     font-size: 1.8rem
-  .partner .main-content>ul .drop-parent .drop-content
+  .slide-tabs .main-content>ul .drop-parent .drop-content
     margin-left: 9.5rem
+
+  .faq .main-content>ul .drop-parent .drop-content
+    margin-left: 5rem
+    p
+      padding-right: 4rem
 
 
 @media only screen and (max-width : 539px)
@@ -453,18 +466,24 @@
     width: 70px
     background-size: 32px
     margin-bottom: 2.8rem
-  .partner .main-content>ul .drop-parent>a
+  .slide-tabs .main-content>ul .drop-parent>a
     font-size: 16px
     font-weight: 700
     line-height: 22px
-  .partner .main-content>ul .drop-parent.active>a span
+  .slide-tabs .main-content>ul .drop-parent.active>a span, .slide-tabs .main-content>ul .drop-parent>a span
     height: 40px
     min-width: 40px
-  .partner .main-content>ul .drop-parent .drop-content
+    width: 40px
+  .slide-tabs .main-content>ul .drop-parent .drop-content
     margin-left: 5.8rem
-  .partner .main-content>ul .drop-parent .drop-content li
+  .slide-tabs .main-content>ul .drop-parent .drop-content li, .slide-tabs .main-content>ul .drop-parent .drop-content p
     font-size: 16px
-  line-height: 25px
+    line-height: 25px
+  .faq .main-content>ul .drop-parent .drop-content
+    margin-left: 3.4rem
+    p
+      padding-right: 2.5rem
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
@@ -570,3 +589,17 @@
     .message p
       padding: 0
 
+@media only screen and (max-height : 500px)
+  .top-line__nav
+    padding-top: 6rem
+    overflow: hidden
+    nav
+      height: 200px
+      overflow: scroll
+      ul li a
+        padding: 1.3rem !important
+  .login-language .login_form
+    height: 300px
+    overflow: scroll
+    form
+      height: 450px

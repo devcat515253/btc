@@ -275,7 +275,7 @@ $(function() {
     });
 
 
-    $('.partner .drop-parent >a').on('click', function (e) {
+    $('.partner .drop-parent >a, .slide-tabs .drop-parent >a').on('click', function (e) {
         event.preventDefault();
         //console.log('rwf');
         if($(this).next('.drop-content').is(":animated")) return;
@@ -288,7 +288,7 @@ $(function() {
 
     function activeDown() {
         try {
-            $('.partner .drop-parent.active >a').next('.drop-content').slideDown();
+            $('.partner .drop-parent.active >a, .slide-tabs .drop-parent.active >a').next('.drop-content').slideDown();
 
         } catch(e){}
     }

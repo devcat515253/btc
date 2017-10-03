@@ -294,13 +294,15 @@ a
 .close-menu
 	display: none
 	align-self: flex-end
-	position: relative
 	margin-top: 1rem
 	z-index: 9
 	cursor: pointer
+	//position: relative
 	span
 		display: flex
-		position: relative
+		position: absolute
+		top: 20px
+		right: 30px
 		&:after
 			position: absolute
 			content: ''
@@ -1647,7 +1649,7 @@ a
 				background-color: #f4cd78
 				margin-right: 8rem
 
-.partner
+.partner,.faq
 	.main-content
 		>ul
 			display: flex
@@ -1797,7 +1799,14 @@ a
 
 
 
-
+.faq
+	.main-content
+		p
+			color: #6b6b6b
+			font-size: 1.8rem
+			font-weight: 300
+			line-height: 3rem
+			padding-right: 27rem
 
 
 
