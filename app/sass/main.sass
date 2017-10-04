@@ -675,6 +675,26 @@ a
 				b
 					color: #2f2f2f
 					font-weight: 700
+			.pagination_small
+				@extend .pagination
+				min-height: auto!important
+				margin-top: 2rem
+				ul
+					flex-direction: row
+					min-width: auto
+					li
+						width: auto
+						display: flex
+						align-items: center
+						justify-content: center
+						&.prev-item,&.prev-all
+							a
+								&:after
+									transform: rotate(0)
+
+						a
+							&:after
+								background: none
 			.another-option
 				position: relative
 
@@ -1413,6 +1433,8 @@ a
 			&:hover
 				color: white
 				background: darken(#6bb28b,3%)
+			&:active
+				+activBtn(#6bb28b)
 
 			&:after
 				content: ''
@@ -1447,6 +1469,7 @@ a
 		margin: 0 auto
 		margin-top: 5rem
 		transition: all .25s ease
+		+activBtn(#f4cd78)
 		&:hover
 			background: darken(#f4cd78,3%)
 		&:after
@@ -1460,6 +1483,7 @@ a
 			margin-left: auto
 		&_done
 			margin-top: 2rem
+			+activBtn(#f4cd78)
 	&-close
 		position: absolute
 		display: flex
@@ -1668,7 +1692,7 @@ a
 				background-color: #f4cd78
 				margin-right: 8rem
 
-.partner,.faq
+.partner,.faq,.news
 	.main-content
 		>ul
 			display: flex
@@ -1976,5 +2000,179 @@ a
 					border-width: 6px 8px 6px 0
 					border-color: transparent #6bb28b transparent transparent
 					transform: rotate(180deg)
+
+.news
+	.main-content
+		>ul
+			.drop-parent
+				>a
+					padding-left: 100px
+					span
+						background-color: #6bb28b
+						border-radius: 6px
+						width: auto
+						height: auto
+						border: none
+						padding: 1.2rem	2.4rem
+						color: #fffefe
+						font-size: 1.8rem
+						font-weight: 700
+						line-height: 2.2rem
+
+
+				&:nth-of-type(even)>a
+					span
+						background-color: #75c599
+
+	.main-content>ul .drop-parent.active>a span
+		background-color: #eaeaea
+		border-radius: 6px
+		border: none
+		color: #9d9d9d
+		font-size: 1.8rem
+		font-weight: 700
+		line-height: 2.2rem
+
+
+.contact
+
+.twice
+	.step
+
+		flex: 1
+		&:first-child
+			.step_content
+				//padding-left: 20rem
+				//padding-right: 20rem
+				background-color: #f7f7f7
+				&:after
+					top: 36%
+					border-color: transparent transparent transparent #f7f7f7
+		.step_content
+			.form
+				width: 37rem
+				display: flex
+				flex-direction: column
+				align-items: center
+				margin: 0 auto
+				padding: 6rem 0
+				p
+					width: 100%
+			.drop-content_responsive
+				display: flex
+				justify-content: center
+			.agents
+				margin: 0 auto
+				padding: 0 6rem
+				margin-top: 22rem
+				background-color: #f7f7f7
+				border: 2px solid #eaeaea
+				border-radius: 6px
+				position: relative
+				.photo
+					position: absolute
+					top: 0
+					left: 50%
+					transform: translate(-50%,-50%)
+					width: 140px
+					height: 140px
+					background-color: #2d5682
+					border: 4px solid #2f2f2f
+					border-radius: 50%
+					display: flex
+					align-items: center
+					justify-content: center
+					img
+						width: 100%
+
+
+				.form
+					padding-top: 11rem
+
+.twice .step:last-child .step_content
+	padding-top: 6rem
+.drop-parent_responsive
+	min-width: 60rem
+	&:last-child
+		margin-bottom: 40rem
+	>a
+		width: 100%
+		//background-color: #f7f7f7
+		font-size: 2.4rem
+		line-height: 2.2rem
+		color: #7a7a7a
+		font-weight: 600
+		border-bottom: 3px solid #d7b569
+		padding: 2rem
+		b
+			color: #2f2f2f
+			font-weight: 700
+
+
+.input-bg-light-gray
+	margin-bottom: 0!important
+	input
+		background-color: #eaeaea!important
+		border: 0.2rem solid #eaeaea!important
+		border-radius: 6px
+
+
+.ic
+	&-map
+		&:after
+			position: relative
+			content: ''
+			margin-left: auto
+			background: url("../img/ic-map.png") no-repeat center top
+			background-size: contain
+			width: 15px
+			height: 20px
+	&-skype
+		&:after
+			position: relative
+			content: ''
+			margin-left: auto
+			background: url("../img/skype-logo.png") no-repeat center top
+			background-size: contain
+			width: 20px
+			height: 20px
+	&-fb
+		&:after
+			position: relative
+			content: ''
+			margin-left: auto
+			background: url("../img/facebook-logo.png") no-repeat center top
+			background-size: contain
+			width: 11px
+			height: 20px
+	&-vk
+		&:after
+			position: relative
+			content: ''
+			margin-left: auto
+			background: url("../img/vk-logo.png") no-repeat center top
+			background-size: contain
+			width: 28px
+			height: 16px
+	&-wa
+		&:after
+			position: relative
+			content: ''
+			margin-left: auto
+			background: url("../img/whatsapp.png") no-repeat center top
+			background-size: contain
+			width: 20px
+			height: 20px
+	&-drop
+		&:after
+			content: ''
+			position: relative
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 6px 4.5px 0 4.5px
+			border-color: #007bff transparent transparent transparent
+
+
 
 @import "media" // Всегда в конце

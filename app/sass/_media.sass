@@ -7,6 +7,7 @@
     font-size: 8px
   .btn-login_green
     line-height: 2.5rem
+    font-size: 16px
   .main-content .step_content .drop-content .discount,.main-content .step_content .drop-content .free
     font-size: 13px
   .dropdown>a:after
@@ -27,6 +28,8 @@
     align-items: center
   .top-line__nav nav>ul .dropdown ul
     transform: translateX(calc(50% - 20.5px))
+  .faq .main-content p
+    font-size: 16px
 
 
 /* Large Devices, Wide Screens */
@@ -60,6 +63,14 @@
     padding-right: 19rem
   .top-line__nav nav
     margin-right: 2rem
+  .drop-parent_responsive
+    min-width: 50rem
+  .twice .step .step_content .agents
+    padding: 0 5rem
+  .twice .step .step_content .agents .form
+    padding-bottom: 4rem
+  .twice .step .step_content .form
+    padding: 4rem 0
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -200,6 +211,15 @@
     padding-right: 1rem
   .top-line__nav nav>ul .dropdown ul
     transform: translateX(calc(50% - 12.5px))
+  .drop-parent_responsive
+    min-width: 60rem
+  .twice .step:last-child .step_content
+    //padding-bottom: 0
+  .drop-parent_responsive:last-child
+    margin-bottom: 0
+  .twice .step .step_content .agents
+    margin-top: 17rem
+
 
 
 /* Small Devices, Tablets */
@@ -505,6 +525,64 @@
     .btn
       margin: 0 2px
 
+  .news .main-content>ul .drop-parent.active>a span, .news .main-content>ul .drop-parent>a span
+    height: auto
+    min-width: auto
+    width: auto
+    font-size: 14px
+    line-height: 17px
+  .news .main-content>ul .drop-parent>a,.news .main-content>ul .drop-parent.active>a
+    font-size: 18px
+
+  .twice .btn-login_green
+    font-size: 16px
+    &:after
+      display: none
+  .main-content .step_content .pagination_small  a
+    width: 49px
+    height: 49px
+  .drop-parent_responsive>a
+    background-color: #f7f7f7
+    +ic-drop()
+
+  .drop-parent_responsive
+    &.closed
+      >a
+
+        &:after
+          //transition: all 2.5s ease
+          +trans(.5s)
+          transform: rotate(+180deg) translate(0,50%)
+
+
+  .twice .step:first-child .step_content
+    background: white
+  .drop-parent_responsive
+    width: 100%
+    min-width: 100%
+  .twice .step:first-child .step_content
+    padding-bottom: 0
+  .twice .step:nth-child(2) .step_content
+    padding-top: 0
+  .twice .step .step_content
+    input
+      width: 255px
+      font-size: 19px
+      line-height: 17px
+      padding: 1.7rem 2.5rem
+    .form
+      width: auto
+  .drop-parent_responsive>a
+    font-size: 19px
+    line-height: 17px
+    padding-left: 1.5rem
+  .btn-login_green
+    line-height: 2.1rem
+    padding: 2.2rem 2.5rem
+  .drop-parent_responsive>a:after
+    right: 1.5rem
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
   .main-content .step_header
@@ -562,6 +640,13 @@
         width: 320px
         height: 567px
         padding: 0 32px
+  .login-language .login_form form
+    height: 467px
+
+
+@media only screen and (max-width : 359px)
+  .twice .step .step_content .agents
+    padding: 0 3rem
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
