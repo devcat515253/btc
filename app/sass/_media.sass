@@ -30,6 +30,26 @@
     transform: translateX(calc(50% - 20.5px))
   .faq .main-content p
     font-size: 16px
+  .twice  .step_content .drop-parent_responsive .message
+    padding-left: 8rem
+    p
+      font-size: 16px
+    p:before
+      width: 5rem
+      height: 5rem
+      background-size: 2rem
+      margin-right: 1rem
+  .twice  .step_content .drop-parent_responsive
+    .verify
+      width: 80%
+
+  .referal
+    .step_content
+      .drop-content_responsive
+        .btn-exchange
+          margin: 4rem auto
+          font-size: 2.3rem
+          padding: 2.3rem 2.5rem
 
 
 /* Large Devices, Wide Screens */
@@ -394,6 +414,17 @@
     p
       padding-right: 4rem
 
+  .login-language
+    .logged_form
+      position: fixed
+      left: 50%
+      width: 300px
+      height: auto
+      top: 50%
+      transform: translate(-50%,-50%)
+      &:after
+        display: none
+
 
 @media only screen and (max-width : 539px)
   .exchange-money .rate_currency-cost .currency-cost .price .sell,.exchange-money .rate_currency-cost .currency-cost .price .buy
@@ -581,6 +612,36 @@
     padding: 2.2rem 2.5rem
   .drop-parent_responsive>a:after
     right: 1.5rem
+  .twice .btn-login_green
+    width: 255px
+
+  .profile
+    .twice .step .step_content .form
+      display: flex
+      flex-direction: column
+      align-items: center
+    .twice .step .step_content .form p
+      width: auto!important
+  .twice .step_content .drop-parent_responsive .verify
+    width: 255px
+  .twice .step .step_content .drop-parent_responsive .message
+    width: 87%
+
+  .referal
+    .step_content
+      .drop-content_responsive
+        .btn-exchange
+          margin: 4rem auto
+          font-size: 14px
+          padding: 2.3rem 2.5rem
+          line-height: 17px
+        .message
+          p
+            font-size: 12px
+            line-height: 15px
+  .referal .step_content .drop-content_responsive .referal2 .btn-exchange
+    margin-top: 1.6rem
+    margin-bottom: 4rem
 
 
 /* Extra Small Devices, Phones */
@@ -661,18 +722,24 @@
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
+@media only screen and (min-width : 481px)
   .mobile
     display: none
+  .change-pass,.verify
+    display: none
+  .agent-link
+    display: none!important
 
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
   .top-line__logo_mobile,.top-line__nav_mobile-btn
     display: none
-  .login_form
-    .btn-close,.btn-login_new-account
+  .login_form,.logged_form
+    //.btn-close,.btn-login_new-account
+    .btn-close
       display: none
+
 
 
 /* Medium Devices, Desktops */
@@ -705,6 +772,157 @@
         padding: 1.3rem !important
   .login-language .login_form
     height: 300px
-    overflow: scroll
+    overflow-y: scroll
     form
       height: 450px
+
+
+@media only screen and (max-height : 640px)
+  .zoom-anim-dialog
+    height: calc(100vh - 5rem)
+    overflow-y: scroll
+    form
+      height: 600px
+
+
+// NEWS
+
+@media only screen and (max-width : 1900px)
+  ._two .bigtab table
+    width: 60rem
+  .bigtab table thead tr th:first-child, .bigtab .table-time
+    width: 20rem
+  .bigtab table thead tr th:last-child, .bigtab .table tbody tr td:last-child
+    width: 20rem
+  .bigtab
+    .step_content, .step_content, &.step:last-child .step_content
+      padding: 5rem 3rem
+@media only screen and (max-width : 1700px)
+  ._two .table
+    font-size: 1.6rem
+    width: 100%
+  ._two .table-time
+    width: 10rem
+  ._two .table tbody tr td:first-child, ._two .table tbody tr td:last-child
+    padding: 2rem
+  ._two .table tbody tr td:first-child
+    padding-right: 0
+  ._two .table tbody tr td:last-child
+    padding-right: 0
+  ._two .table-status
+    width: 14rem
+  ._two .table tbody tr td._line
+    padding-right: 0
+    text-align: center
+  ._two .bigtab table
+    width: 68rem
+@media only screen and (max-width : 1200px)
+  ._two .step .step_content, ._two .step:last-child .step_content
+    padding: 5rem 3rem
+  ._two .bigtab table
+    width: 54rem
+  .bigtab .table-time, .bigtab table thead tr th:first-child
+    width: 10rem
+
+@media only screen and (max-width : 991px)
+  .twice .drop-parent_responsive
+    max-width: 100%
+    width: 100%
+  ._two .table tbody tr td:first-child
+    width: auto
+    flex: 1
+    text-align: left
+  ._two .table tbody tr td._line, ._two .table td
+    width: auto
+    flex: 1
+    text-align: center
+  ._two .bigtab table
+    width: 100%
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-wrap: wrap
+    thead, tbody
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      tr
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        td, th
+          width: auto !important
+          flex: 1
+    thead
+      font-size: 1.8rem
+@media only screen and (max-width : 767px)
+  ._two .table tbody tr td._line
+    flex: 1.3
+
+@media only screen and (max-width : 539px)
+  ._two .table tbody tr td:first-child, ._two .table tbody tr td:last-child
+    width: 100%
+    text-align: center
+    flex: none
+    justify-content: center
+  ._two .table tbody tr td._line, ._two .table td
+    width: auto
+    flex: none
+  ._two .table tbody tr
+    justify-content: center
+    padding: 1rem 0
+    td
+      padding: .5rem 2rem !important
+  ._two .table tbody tr td._line
+    padding-right: 2rem
+    &:before
+      display: none
+  ._two .step .step_content, ._two .step:last-child .step_content
+    padding-top: 0
+  .twice
+    padding-top: 5rem
+    .drop-parent_responsive>a
+      padding-left: 3rem
+    .drop-parent_responsive>a:after
+      right: 2.1rem
+  ._two .table tbody tr td._line, ._two .table td
+    font-size: 1.87rem
+    font-weight: 600
+  ._two .table tbody tr td:first-child, ._two .table tbody tr td:last-child
+    font-size: 1.623rem
+    font-weight: bold
+  ._two .step .step_content, ._two .step:last-child .step_content
+    padding: 0
+  ._two .table-status .status
+    width: 26px
+    height: 26px
+  ._two .bigtab .table tbody tr td:first-child, ._two .bigtab .table tbody tr td:last-child
+    width: auto
+    flex: 2
+  ._two .bigtab .table tbody tr td:first-child
+    text-align: left
+  ._two .bigtab .table tbody tr td:last-child
+    flex: 3
+    justify-content: space-between
+  ._two .bigtab .table tbody tr td._line
+    flex: 1
+    &:before
+      display: block
+  ._two .bigtab table thead,  ._two .bigtab table td
+    font-size: 14px !important
+  ._two .bigtab table thead tr th:first-child
+    flex: 1.5
+  ._two .bigtab table thead tr th:nth-child(2)
+    flex: 1
+  ._two .bigtab table thead tr th:last-child
+    flex: 4

@@ -31,7 +31,7 @@
 
 </head>
 
-<body class="contact">
+<body>
 
 	<div class="top-line">
 		<div class="top-line__logo">
@@ -50,11 +50,11 @@
 			</div>
 			<nav>
 				<ul>
-					<li class=""><a href="#">Exchange</a></li>
+					<li class="active"><a href="#">Exchange</a></li>
 					<li ><a href="#">Become a partner</a>
 
 					</li>
-					<li id="contacts" class="active"><a href="#">Contact</a>
+					<li id="contacts"><a href="#">Contact</a>
 
 					</li>
 					<li class="dropdown">
@@ -117,161 +117,336 @@
 		</div>
 	</div>
 
+	<div class="exchange-money">
+		<div class="container">
+			<div class="container_left">
+				<h1 class="title">
+					Exchange your money <br>
+					in <span>3 easy steps</span>
+				</h1>
 
+				<p class="title-info">
+					We are fast and secure. 100% SSL transactions <br>
+					and our servers are DDOS protected. <br>
+					Start now!
+				</p>
 
-	<div class="main-content  twice">
-
-		<div class="step">
-
-			<div class="step_content">
-
-			<div class="drop-parent_responsive">
-				<a href="#"><b>Legal</b> information</a>
-
-				<div class="drop-content_responsive">
-					<form action="#">
-						<div class="form">
-							<p>
-								<label>Company name:</label>
-								<label  class=" input-bg-gray input-bg-light-gray">
-									<input type="text" value="Smartex International Inc." readonly>
-								</label>
-							</p>
-
-							<p>
-								<label>Company registration number:</label>
-								<label  class=" input-bg-gray  input-bg-light-gray">
-									<input type="text" value="166105"  readonly>
-
-								</label>
-							</p>
-
-
-
-							<p>
-								<label>Company legal address:</label>
-								<a href="#" class="btn btn-login_green ic-map">Slow on map</a>
-							</p>
-
-
-							<!--<label>
-                                <a href="#" class="btn btn-login_green">Login</a>
-                            </label>-->
+				<div class="rate">
+					<div class="rate_currency-type">
+						<div class="tabs-nav">
+							<ul>
+								<li><a href="#BTC" class="active" >BTC</a></li>
+								<li><a href="#ETH">ETH</a></li>
+								<li><a href="#LTC">LTC</a></li>
+							</ul>
 						</div>
-					</form>
-				</div>
-			</div>
+					</div>
 
-				<div class="drop-parent_responsive">
-					<a href="#"><b>Get in touch</b></a>
+					<div class="rate_currency-cost">
+						<div class="tabs-content">
 
-					<div class="drop-content_responsive">
-						<form action="#">
-							<div class="form">
-								<p>
-									<label>E-mail addres:</label>
-									<label  class=" input-bg-gray input-bg-light-gray">
-										<input type="text" value="smartex.btc@gmail.com"  readonly>
-									</label>
-								</p>
+							<div id="BTC" class="currency-cost show">
+								<div class="price">
+									<div class="sell">
+											<span class="info">Sell Bitcoin at:</span>
+											97 300.00 Kč
+									</div>
 
+									<div class="buy">
+											<span class="info">Buy Bitcoin at:</span>
+											97 499.92 Kč
+									</div>
+								</div>
 
-
-
-								<p>
-									<label>Skype:</label>
-									<a href="#" class="btn btn-login_green ic-skype">Call</a>
-								</p>
-
-								<p>
-									<label>Facebook:</label>
-									<a href="#" class="btn btn-login_green ic-fb">Slow FB page</a>
-								</p>
-								<p>
-									<label>Vkontakte:</label>
-									<a href="#" class="btn btn-login_green ic-vk">Slow VK page</a>
-								</p>
-
-
-								<!--<label>
-                                    <a href="#" class="btn btn-login_green">Login</a>
-                                </label>-->
+								<div class="buttons">
+									<div class="button">
+										<a href="#">BUY NOW</a>
+									</div>
+									<div class="button">
+										<a href="#">SELL NOW</a>
+									</div>
+								</div>
 							</div>
-						</form>
+
+							<div id="ETH" class="currency-cost ">
+								<div class="price">
+									<div class="sell">
+										<span class="info">Sell Bitcoin at:</span>
+										77 300.00 Kč
+									</div>
+
+									<div class="buy">
+										<span class="info">Buy Bitcoin at:</span>
+										77 499.92 Kč
+									</div>
+								</div>
+
+								<div class="buttons">
+									<div class="button">
+										<a href="#">BUY NOW</a>
+									</div>
+									<div class="button">
+										<a href="#">SELL NOW</a>
+									</div>
+								</div>
+							</div>
+
+							<div id="LTC" class="currency-cost ">
+								<div class="price">
+									<div class="sell">
+										<span class="info">Sell Bitcoin at:</span>
+										87 300.00 Kč
+									</div>
+
+									<div class="buy">
+										<span class="info">Buy Bitcoin at:</span>
+										87 499.92 Kč
+									</div>
+								</div>
+
+								<div class="buttons">
+									<div class="button">
+										<a href="#">BUY NOW</a>
+									</div>
+									<div class="button">
+										<a href="#">SELL NOW</a>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
 					</div>
 				</div>
 
+			</div>
+			<div class="container_right">
+				<div class="graph">
+					<div id="container" style="min-width: 51rem; height: 46rem;width: auto; margin: 0 auto"></div>
+				</div>
+			</div>
+		</div>
 
+		<div class="overlay"></div>
+	</div>
+
+
+	<div class="main-content">
+		<div class="step">
+			<div class="step_header">
+				<span class="title">You <b>send</b></span>
+			</div>
+			<div class="step_content">
+				<span class="option-title">Select <b>currency</b>:</span>
+
+				<a href="#" class="option ">Perfect Money</a>
+				<a href="#" class="option">Credit</a>
+				<a href="#" class="option">OKPAY</a>
+		<div class="mobile-another-option another-option">
+				<a href="#" class="option option_another">Choose another</a>
+			<div class="mobile_options ">
+				<a href="#" class="option ">Payeer</a>
+				<a href="#" class="option active ">Advanced Cash</a>
+				<a href="#" class="option">BTC-E USD</a>
+				<a href="#" class="option">Bitcoin</a>
+				<a href="#" class="option">Ether</a>
+				<a href="#" class="option">Dash</a>
+				<a href="#" class="option ">Monero</a>
+				<div class="desktop another-option">
+					<a href="#" class="option option_another">Choose another</a>
+					<div class="desktop-options hidden-option">
+						<a href="#" class="option ">Ether</a>
+						<a href="#" class="option">Dash</a>
+						<a href="#" class="option ">Monero</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			</div>
+		</div>
+		<div class="step">
+			<div class="step_header">
+				<span class="title">You <b>receive</b></span>
+			</div>
+			<div class="step_content">
+				<span class="option-title">Select <b>currency</b>:</span>
+
+				<a href="#" class="option ">Perfect Money</a>
+				<a href="#" class="option">Credit</a>
+				<a href="#" class="option active">OKPAY</a>
+				<div class="mobile-another-option another-option">
+					<a href="#" class="option option_another">Choose another</a>
+					<div class="mobile_options">
+						<a href="#" class="option ">Payeer</a>
+						<a href="#" class="option ">Advanced Cash</a>
+						<a href="#" class="option">BTC-E USD</a>
+						<a href="#" class="option">Bitcoin</a>
+						<a href="#" class="option">Ether</a>
+						<a href="#" class="option">Dash</a>
+						<a href="#" class="option">Monero</a>
+						<div class="desktop another-option">
+							<a href="#" class="option option_another">Choose another</a>
+							<div class="desktop-options hidden-option">
+								<a href="#" class="option ">Ether</a>
+								<a href="#" class="option">Dash</a>
+								<a href="#" class="option ">Monero</a>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>
 
 		<div class="step">
-
+			<div class="step_header">
+				<span class="title"><b>Set</b> your <b>transaction</b></span>
+			</div>
 			<div class="step_content">
 
-				<div class="drop-parent_responsive">
-					<a href="#">Our <b>agents & representatives</b></a>
-
-					<div class="drop-content_responsive ">
-						<form action="#">
-								<div class="agents">
-									<div class="photo"><img src="img/profile-foto-bg.png" class="img-responsive" alt=""></div>
-									<div class="form">
-
-
-									<p>
-										<label>Fullname:</label>
-										<label  class=" input-bg-gray  input-bg-light-gray">
-											<input type="text"  value="Walter Smith" readonly>
-
-										</label>
-									</p>
-										<p>
-											<label>Language:</label>
-											<label  class=" input-bg-gray  input-bg-light-gray" >
-												<input type="text"  value="English" readonly>
-
-											</label>
-										</p>
-
-
-
-									<p>
-										<label>Company legal address:</label>
-										<a href="#" class="btn btn-login_green ic-wa">Call</a>
-									</p>
-										<p>
-											<label>Company legal address:</label>
-											<a href="#" class="btn btn-login_green ic-fb">Slow FB page</a>
-										</p>
-
-
-									<!--<label>
-										<a href="#" class="btn btn-login_green">Login</a>
-									</label>-->
+				<ul>
+					<li class="drop-parent active">
+						<a href="#"><b>Transaction</b> info</a>
+						<div class="drop-content">
+							<form action="#">
+								<div class="form">
+								<p>
+									<label>Set amount you send:</label>
+									<label  class="number">
+										<input type="text" value="1" name="amount_send">
+										<span class="currency">USD</span>
+										<span class="minus"></span>
+										<span class="plus"></span>
+									</label>
+								</p>
+								<div class="from-to">
+									<img src="img/from-to.png" class="img-responsive" alt="">
 								</div>
-								</div>
-						</form>
-					</div>
-				</div>
-				<div class="pagination_small">
-					<ul >
-						<li class="btn prev-item disable"><a href="#"></a></li>
+								<p>
+									<label>Amount you receive:</label>
+									<label class="number">
+										<input type="text" value="1" name="amount_receive">
+										<span class="currency">USD</span>
+										<span class="minus"></span>
+										<span class="plus"></span>
+									</label>
+								</p>
 
-						<li class="btn next-item"><a href="#"></a></li>
-					</ul>
-				</div>
-				<!--<label>
+								<div class="free">
+									<div class="free_left">Fee (4.45%):</div>
+									<div class="free_right">
+										<span>4.45</span>
+										<span>usd</span>
+									</div>
+								</div>
+								<div class="discount">
+									<div class="discount_left">Discount (0%):</div>
+									<div class="discount_right">
+										<span>0</span>
+										<span>usd</span>
+									</div>
+								</div>
+
+								<!--<label>
+									<a href="#" class="btn btn-login_green">Login</a>
+								</label>-->
+								</div>
+							</form>
+
+						</div>
+					</li>
+					<li class="drop-parent ">
+						<a href="#"><b>Personal</b> & <b>wallet</b> info</a>
+						<div class="drop-content">
+							<form action="#">
+								<div class="form">
+								<p>
+									<label class="label_text">Set wallet ID:</label>
+									<label class="with-tip">
+										<input type="text" name="amount_send">
+										<span class="tip">Please set wallet ID.</span>
+
+									</label>
+								</p>
+								<p>
+									<label class="label_text">Set e-mail ddress:</label>
+									<label class="with-tip">
+										<input type="text" name="amount_send">
+										<span class="tip">Please set e-mail ddress.</span>
+									</label>
+								</p>
+
+
+								</div>
+							</form>
+							<div class="message">
+								<p>
+									Click the link in your <span>email</span>  <br>
+									to process the transaction
+								</p>
+							</div>
+
+						</div>
+
+					</li>
+				</ul>
+
+				<label>
 					<a href="#" class="btn btn-exchange">Exchange</a>
-				</label>-->
+				</label>
 
 			</div>
 		</div>
 	</div>
 
 
+	<div class="feedback">
+		<h2 class="mobile_title"><b>Positive</b> feedback</h2>
 
+		<div class="feedback_left">
+			<h2 class="title"><b>Positive</b></h2>
+			<div class="item">
+				<div class="item_photo"><img src="img/photo-comment1.png" alt="" class="img-responsive"></div>
+				<div class="item_content">Easy and fast use. Good service and really <br>
+					good exchange rates by the way.
+				<span class="name">- Patrick M., Berlin (GERMANY)</span>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="item_photo"><img src="img/photo-comment2.png" alt="" class="img-responsive"></div>
+				<div class="item_content">I like to use Smartex, because this service <br>
+					is really simple. I can exchange my money <br>
+					on laptop and with my phone too :)
+					<span class="name">- Veronika N., Prague (CZECH REPUBLIC)</span>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="feedback_right">
+			<h2 class="title">feedback</h2>
+
+			<div class="item">
+				<div class="item_photo" ><img src="img/photo-comment3.png" alt="" class="img-responsive"></div>
+				<div class="item_content">I tried a lot of exchange services, but that is <br>
+					simply Smartex! Good job!
+					<span class="name">- Alexey L., Omsk (RUSSIA)</span>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="item_photo"  ><img src="img/photo-comment4.png" alt="" class="img-responsive"></div>
+				<div class="item_content">Do you need exchange your money fast? <br>
+					Try this service, believe me.
+					<span class="name">- Richard R., Oklahoma City (USA)</span>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="load_more">Load more</a>
+	</div>
 
 	<div class="footer">
 		<ul>
